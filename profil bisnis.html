@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil UMKM - Martabak Sultan</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fefefe;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    header {
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      opacity: 0.9;
+    }
+    section {
+      padding: 30px 40px;
+    }
+    section h2 {
+      color: #0072ff;
+      font-weight: 700;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #00c6ff;
+      padding-bottom: 5px;
+      letter-spacing: 1.1px;
+    }
+    .about p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background: #f9f9f9;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .product-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-info h3 {
+      margin-bottom: 8px;
+      color: #0072ff;
+    }
+    .product-info p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+    .contact-info p {
+      font-size: 1rem;
+      margin-bottom: 12px;
+      color: #444;
+    }
+    .social-links a {
+      display: inline-block;
+      margin-right: 15px;
+      color: #0072ff;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+    .social-links a:hover {
+      border-color: #00c6ff;
+    }
+    footer {
+      background: #0072ff;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section {
+        padding: 20px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Martabak Sultan</h1>
+      <p>Penjualan martabak salah satu jajanan khas Indonesia yang populer dan digemari berbagai kalangan. Martabak tersedia dalam dua jenis utama: martabak manis (terang bulan) dan martabak telur.</p>
+    </header>
+
+    <section class="about">
+      <h2>Tentang Kami</h2>
+      <p>Martabak Lezat Nusantara adalah usaha kuliner UMKM yang berdedikasi menghadirkan martabak dengan cita rasa khas, berkualitas tinggi, dan inovatif bagi pelanggan dari berbagai kalangan. Berdiri sejak tahun 2023, kami hadir untuk menjadi pilihan utama masyarakat dalam menikmati martabak yang nikmat, bersih, dan dibuat dari bahan-bahan terbaik.</p>
+    </section>
+
+    <section class="products">
+      <h2>Varian Martabak</h2>
+      <div class="products">
+
+        <div class="product-card">
+          <img src="martabak-telur-lsbad41fu68S8.jpg" alt="Martabak telor" class="product-image" />
+          <div class="product-info">
+            <h3>Martbak telor</h3>
+            <p>Martabak telor ayam dan bebek.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="MM-CKWK.jpg" alt="Martabak Manis" class="product-image" />
+          <div class="product-info">
+            <h3>Martabak Manis</h3>
+            <p>Martabak manis yang bervarian coklat,kacang,keju.</p>
+          </div>
+        </div>
+
+       
+
+        <div class="product-card">
+          <img src="mrtb-2335590526.webp" alt="Martabak Ketan" class="product-image" />
+          <div class="product-info">
+            <h3>Martabak Ketan</h3>
+            <p>Martabak ketan merah.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Kontak Kami</h2>
+      <div class="contact-info">
+        <p>📍 Alamat: Jl. Taman Adiyasa Blok A.Cikasungka,Solear,Kab.Tangerang.</p>
+        <p>📞 Telepon: 085282151535</p>
+        <p>✉️ Email: <a href="muhammadalfi574@gmail.com">info@martabak.com</a></p>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/m.alfi21?igsh=MTRncHAzdnd1ZHVxdg==" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.facebook.com/muhamad.udin.1401" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://wa.me/085282151535" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    
+  </footer>
+
+</body>
+</html>
